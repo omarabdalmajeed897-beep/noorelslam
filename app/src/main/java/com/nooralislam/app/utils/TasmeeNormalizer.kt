@@ -13,12 +13,12 @@ data class TasmeeMatchResult(
 
 object TasmeeNormalizer {
     fun compare(targetText: String, spokenText: String): TasmeeMatchResult {
-        val rawTarget = targetText.split(Regex("\s+")).filter {
+        val rawTarget = targetText.split(Regex("\\s+")).filter {
             QuranRepository.normalizeArabic(it).isNotEmpty()
         }
         val normTarget = rawTarget.map { QuranRepository.normalizeArabic(it) }
         val normSpoken = QuranRepository.normalizeArabic(spokenText)
-            .split(Regex("\s+"))
+            .split(Regex("\\s+"))
             .filter { it.isNotEmpty() }
 
         val n = normTarget.size
