@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.NoorAlIslam" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
