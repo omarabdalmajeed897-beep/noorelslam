@@ -1,0 +1,5 @@
+## ضع مسار Android SDK هنا إذا لم يحدده Android Studio تلقائياً:
+# Windows example:
+# sdk.dir=C:\Users\YOUR_USER\AppData\Local\Android\Sdk
+# macOS example:
+# sdk.dir=/Users/YOUR_USER/Library/Android/sdk
